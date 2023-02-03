@@ -1,5 +1,6 @@
 import { expect, it } from "vitest";
 
+// 型別結尾可以用逗號，但最正確的方式是放分號
 export const addTwoNumbers = (params: { first: number; second: number }) => {
   return params.first + params.second;
 };
