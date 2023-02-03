@@ -11,6 +11,16 @@ interface User {
   role: "admin" | "user" | "super-admin";
 }
 
+// 也可以給一個 Type Alias
+type Role = "admin" | "user" | "super-admin";
+
+// 當聯合型別很多種類時，可以這樣寫，稍微增加可讀性
+type Name = 
+  | 'Alan'
+  | 'Tina'
+  | 'Ben'
+  | 'Luke';
+
 export const defaultUser: User = {
   id: 1,
   firstName: "Matt",
