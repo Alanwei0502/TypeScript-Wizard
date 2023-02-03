@@ -24,6 +24,14 @@ interface Comment extends Base {
   comment: string;
 }
 
+// interface Other extends Base, User {
+//   a: string;
+// }
+
+// const other: Other = {
+//   // 輸入 '' 可以看到vscode的提示
+// }
+
 type tests = [
   Expect<Equal<User, { id: string; firstName: string; lastName: string }>>,
   Expect<Equal<Post, { id: string; title: string; body: string }>>,
