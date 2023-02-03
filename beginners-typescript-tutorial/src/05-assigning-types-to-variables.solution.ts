@@ -11,6 +11,7 @@ interface User {
  * How do we ensure that defaultUser is of type User
  * at THIS LINE - not further down in the code?
  */
+// 在建立這個物件的時候，就給予型別的限制，如果不符合，TypeScript 會在這裡就給予錯誤提示
 const defaultUser: User = {
   id: 1,
   firstName: "Matt",
