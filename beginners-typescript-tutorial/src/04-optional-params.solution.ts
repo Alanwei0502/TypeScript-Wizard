@@ -1,6 +1,9 @@
 import { expect, it } from "vitest";
 
-export const getName = (first: string, last?: string) => {
+// 如果參數不是一個物件，那optional的參數必須在後面
+// 這樣寫會報錯：(last?: string, first: string)
+// error: A required parameter cannot follow an optional parameter.
+export const getName = (first: string, last?: string ) => {
   if (last) {
     return `${first} ${last}`;
   }
