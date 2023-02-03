@@ -3,6 +3,9 @@ import { Equal, Expect } from "./helpers/type-utils";
 
 const guitarists = new Set<string>();
 
+// 同樣的 Map 物件也可以給予型別
+// const map = new Map<string, number>();
+
 guitarists.add("Jimi Hendrix");
 guitarists.add("Eric Clapton");
 
