@@ -17,3 +17,5 @@ export const setCartDataAction = (payload: CartDataPayload) => ({
 type SetUserDataAction = ReturnType<typeof setUserDataAction>;
 type ResetUserDataAction = ReturnType<typeof resetuserDataAction>;
 type SetCartDataAction = ReturnType<typeof setCartDataAction>;
+
+type Actions = SetUserDataAction | ResetUserDataAction | SetCartDataAction;
