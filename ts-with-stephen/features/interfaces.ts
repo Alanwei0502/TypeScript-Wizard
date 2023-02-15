@@ -17,3 +17,38 @@ const printVehicle = (vehicle: Vehicle): void => {
 };
 
 printVehicle(oldCivic);
+
+interface IPerson {
+  name: string;
+  age: number;
+  introduce(): string;
+}
+
+let alan: IPerson = {
+  name: 'Alan',
+  age: 29,
+  introduce() {
+    return `Hi, my name is ${this.name}. Nice to meet you!`;
+  },
+};
+
+interface Reportable {
+  summary(): string;
+}
+
+const toyota = {
+  name: 'toyota',
+  year: new Date(),
+  broken: true,
+  summary(): string {
+    return `Name: ${this.name}`;
+  },
+};
+
+const printToyota = (vehicle: Reportable): void => {
+  console.log(vehicle.summary());
+};
+
+printToyota(toyota);
+
+export default {};
