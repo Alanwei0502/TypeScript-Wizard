@@ -12,5 +12,7 @@ const obj: Obj = {
 
 // 實作
 type MyRequired<Obj> = {
-  [key in keyof Obj]: Obj[key];
+  [key in keyof Obj]-?: Obj[key];
 };
+
+// TS 內建功能，「減去」可選，使用 -? 語法

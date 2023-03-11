@@ -1,8 +1,9 @@
 type PartPartial<Obj, K extends keyof Obj> = ??;
 
 type UserData = Record<'a' | 'b' | 'c'| 'd', string>;
-
 type PartPartialUserData = PartPartial<UserData, 'a' | 'b'>;
+
+// 結果
 // type PartPartialUserData = {
 //   a?: string;
 //   b?: string;
